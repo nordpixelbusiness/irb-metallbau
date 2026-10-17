@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
 import Gallery from "@/components/Gallery";
+import MapConsent from "@/components/MapConsent";
 import { company, faqs, homePhotos, projects, services } from "@/lib/data";
 
 const highlights = [
@@ -207,29 +208,14 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Image
-            src="/images/map.webp"
-            alt="Karte der Region Vorpommern mit den Standorten Lubmin und Greifswald"
-            width={1400}
-            height={1400}
-            className="w-full aspect-[16/10] object-cover object-[center_60%]"
-            loading="lazy"
+          <MapConsent
+            query="Südring 1, 17509 Lubmin"
+            title="Google Maps: IRB Metallbau in Lubmin"
+            className="aspect-[16/10] w-full"
           />
         </div>
       </section>
 
-      <section className="section bg-paper">
-        <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start">
-          <div>
-            <h2 className="text-3xl md:text-4xl bar">Häufige Fragen</h2>
-            <p className="mt-6 text-muted">Weitere Fragen? Wir sind gerne persönlich für Sie da.</p>
-            <a href={company.phoneHref} className="btn mt-6">
-              {company.phone}
-            </a>
-          </div>
-          <FaqAccordion items={faqs} />
-        </div>
-      </section>
 
       <section className="section">
         <div className="container-x">
@@ -246,6 +232,19 @@ export default function Home() {
               Zu Iso-Rüst-Bau ↗
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="section bg-paper">
+        <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start">
+          <div>
+            <h2 className="text-3xl md:text-4xl bar">Häufige Fragen</h2>
+            <p className="mt-6 text-muted">Weitere Fragen? Wir sind gerne persönlich für Sie da.</p>
+            <a href={company.phoneHref} className="btn mt-6">
+              {company.phone}
+            </a>
+          </div>
+          <FaqAccordion items={faqs} />
         </div>
       </section>
     </>

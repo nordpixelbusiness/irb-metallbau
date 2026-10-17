@@ -35,8 +35,8 @@ export default function Datenschutz() {
             personenbezogenen Daten beim Besuch dieser Website und bei der Kontaktaufnahme verarbeitet werden.
           </P>
           <P>
-            Diese Website setzt keine Cookies, keine Analyse- oder Tracking-Werkzeuge und keine Werbedienste ein. Es
-            werden keine Inhalte von Drittanbietern automatisch nachgeladen.
+            Diese Website setzt keine Cookies, keine Analyse- oder Tracking-Werkzeuge und keine Werbedienste ein. Inhalte
+            von Drittanbietern (Google Maps) werden nur nach Ihrer ausdrücklichen Zustimmung nachgeladen.
           </P>
 
           <H>2. Verantwortlicher</H>
@@ -113,7 +113,7 @@ export default function Datenschutz() {
           <P>
             Wir setzen auf dieser Website keine Cookies und speichern keine Informationen in Ihrem Endgerät, die über
             den technisch notwendigen Abruf der Seiten hinausgehen. Ein Cookie-Banner ist daher nicht erforderlich
-            (§ 25 TDDDG).
+            (§ 25 TDDDG). Eine Ausnahme bildet die auf Wunsch geladene Google-Karte (siehe Abschnitt 9).
           </P>
 
           <H>6. Schriftarten und Medien</H>
@@ -163,7 +163,23 @@ export default function Datenschutz() {
             Die Angabe der Kontaktdaten ist erforderlich, damit wir Ihre Bewerbung bearbeiten können.
           </P>
 
-          <H>9. Externe Links</H>
+          <H>9. Google Maps (Einbettung nach Zustimmung)</H>
+          <div id="google-maps" className="scroll-mt-28" />
+          <P>
+            Auf der Startseite können Sie eine Karte von Google Maps einblenden. Die Karte wird erst geladen, wenn Sie
+            auf „Karte laden“ klicken; bis dahin wird keine Verbindung zu Google hergestellt. Mit dem Laden werden Daten
+            (insbesondere Ihre IP-Adresse, Browser- und Geräteinformationen sowie die Kartenanfrage) an Google Ireland
+            Limited, Gordon House, Barrow Street, Dublin 4, Irland, übertragen und können an Google LLC in die USA
+            übermittelt werden. Google kann dabei Cookies setzen oder auslesen. Rechtsgrundlage ist Ihre Einwilligung
+            (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Sie können sie jederzeit widerrufen, indem Sie die Seite neu
+            laden bzw. schließen. Ihre Entscheidung wird nicht gespeichert; bei jedem Besuch wird erneut gefragt.
+            Datenschutzerklärung von Google:{" "}
+            <a className={link} href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+              policies.google.com/privacy
+            </a>
+            .
+          </P>
+          <H>10. Externe Links</H>
           <P>
             Diese Website enthält Links zu externen Angeboten, insbesondere zu Google Maps (Anfahrt) und zur Website der Schwesterfirma IRB Iso-Rüst-Bau GmbH (irb-online.de). Es
             handelt sich ausschließlich um Verweise: Erst wenn Sie einen solchen Link anklicken, wird eine Verbindung zum
@@ -177,7 +193,7 @@ export default function Datenschutz() {
             ]}
           />
 
-          <H>10. Ihre Rechte</H>
+          <H>11. Ihre Rechte</H>
           <P>Sie haben gegenüber uns jederzeit das Recht auf:</P>
           <UL
             items={[
@@ -196,7 +212,7 @@ export default function Datenschutz() {
             ergeben, jederzeit Widerspruch einlegen.
           </P>
 
-          <H>11. Beschwerderecht bei der Aufsichtsbehörde</H>
+          <H>12. Beschwerderecht bei der Aufsichtsbehörde</H>
           <P>
             Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig für
             uns ist:
@@ -216,19 +232,19 @@ export default function Datenschutz() {
             </a>
           </P>
 
-          <H>12. Speicherdauer</H>
+          <H>13. Speicherdauer</H>
           <P>
             Personenbezogene Daten werden nur so lange gespeichert, wie es für die jeweiligen Zwecke erforderlich ist
             oder gesetzlich vorgeschrieben wird (z. B. handels- und steuerrechtliche Aufbewahrungsfristen).
           </P>
 
-          <H>13. Datensicherheit</H>
+          <H>14. Datensicherheit</H>
           <P>
             Der Aufruf dieser Website erfolgt verschlüsselt über HTTPS (TLS). Ob eine Verbindung verschlüsselt ist,
             erkennen Sie am Schloss-Symbol in der Adresszeile Ihres Browsers.
           </P>
 
-          <H>14. Änderungen dieser Erklärung</H>
+          <H>15. Änderungen dieser Erklärung</H>
           <P>
             Wir passen diese Datenschutzerklärung an, wenn sich die Website oder die Rechtslage ändert. Es gilt die jeweils
             hier veröffentlichte Fassung.

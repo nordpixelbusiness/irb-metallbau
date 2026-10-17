@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Impressum" };
 export default function Impressum() {
   return (
     <>
-      <PageHero title="Impressum" />
+      <PageHero eyebrow="Rechtliches" title="Impressum" />
       <section className="section">
         <div className="container-x max-w-3xl space-y-6 leading-7">
           <h2 className="text-2xl">Angaben gemäß § 5 DDG</h2>

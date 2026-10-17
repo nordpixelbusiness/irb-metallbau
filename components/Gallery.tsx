@@ -51,14 +51,19 @@ export default function Gallery({
               width={p.w}
               height={p.h}
               loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
+            <span className="absolute inset-0 flex items-center justify-center bg-ink/0 transition-colors duration-300 group-hover:bg-ink/45">
+              <span className="flex h-12 w-12 scale-75 items-center justify-center bg-accent text-2xl text-white opacity-0 transition duration-300 group-hover:scale-100 group-hover:opacity-100">
+                +
+              </span>
+            </span>
           </button>
         ))}
       </div>
       {visible < photos.length && (
-        <div className="mt-8 text-center">
-          <button className="btn" onClick={() => setVisible((v) => v + (initial ?? 6))}>
+        <div className="mt-10 text-center">
+          <button className="btn btn-outline" onClick={() => setVisible((v) => v + (initial ?? 6))}>
             Mehr laden
           </button>
         </div>

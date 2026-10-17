@@ -23,7 +23,7 @@ const link = "underline hover:text-accent";
 export default function Datenschutz() {
   return (
     <>
-      <PageHero title="Datenschutzerklärung" />
+      <PageHero eyebrow="Rechtliches" title="Datenschutzerklärung" />
       <section className="section">
         <div className="container-x max-w-3xl leading-7">
           <p className="text-sm text-muted mb-6">Stand: September 2026</p>
@@ -166,7 +166,7 @@ export default function Datenschutz() {
           <H>9. Google Maps (Einbettung nach Zustimmung)</H>
           <div id="google-maps" className="scroll-mt-28" />
           <P>
-            Auf der Startseite können Sie eine Karte von Google Maps einblenden. Die Karte wird erst geladen, wenn Sie
+            Auf der Startseite und der Kontaktseite können Sie eine Karte von Google Maps einblenden. Die Karte wird erst geladen, wenn Sie
             auf „Karte laden“ klicken; bis dahin wird keine Verbindung zu Google hergestellt. Mit dem Laden werden Daten
             (insbesondere Ihre IP-Adresse, Browser- und Geräteinformationen sowie die Kartenanfrage) an Google Ireland
             Limited, Gordon House, Barrow Street, Dublin 4, Irland, übertragen und können an Google LLC in die USA

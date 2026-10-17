@@ -1,15 +1,23 @@
 export default function FaqAccordion({ items }: { items: { q: string; a: string }[] }) {
   return (
-    <div className="border-t-4 border-accent">
-      {items.map((it) => (
-        <details key={it.q} className="group border-b border-neutral-300 bg-white">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-display uppercase tracking-wide [&::-webkit-details-marker]:hidden">
-            <span>{it.q}</span>
-            <span aria-hidden="true" className="text-accent text-2xl leading-none transition-transform group-open:rotate-45">
+    <div className="space-y-3">
+      {items.map((it, i) => (
+        <details
+          key={it.q}
+          name="faq"
+          className="group border border-line bg-white transition-colors open:border-ink open:shadow-[0_14px_30px_-18px_rgb(0_0_0/0.35)]"
+        >
+          <summary className="flex cursor-pointer list-none items-center gap-5 px-6 py-5 [&::-webkit-details-marker]:hidden">
+            <span className="font-display text-sm text-accent">{String(i + 1).padStart(2, "0")}</span>
+            <span className="flex-1 font-display text-lg uppercase tracking-wide">{it.q}</span>
+            <span
+              aria-hidden="true"
+              className="flex h-9 w-9 shrink-0 items-center justify-center border border-line text-xl transition group-open:rotate-45 group-open:border-accent group-open:bg-accent group-open:text-white"
+            >
               +
             </span>
           </summary>
-          <p className="px-5 pb-5 text-muted">{it.a}</p>
+          <p className="px-6 pb-6 pl-[3.6rem] text-muted">{it.a}</p>
         </details>
       ))}
     </div>

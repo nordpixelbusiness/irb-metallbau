@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #ff3200;
+  --accent-dark: #d92a00;
+  --ink: #1c1d1f;
+  --muted: #5d6066;
+  --paper: #f3f3f1;
+}
+
+@theme inline {
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --font-sans: var(--font-public);
+  --font-display: var(--font-oswald);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font-public), system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-oswald), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  font-family: var(--font-oswald), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.95rem;
+  background: var(--accent);
+  color: #fff;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--accent-dark);
+}
+.btn-ghost {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: calc(0.85rem - 2px) calc(1.8rem - 2px);
+}
+.btn-ghost:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.container-x {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+}
+.section {
+  padding: 4.5rem 0;
+}
+.bar::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+  margin-top: 0.9rem;
+}

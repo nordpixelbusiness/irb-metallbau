@@ -26,7 +26,7 @@ export default function Datenschutz() {
       <PageHero eyebrow="Rechtliches" title="Datenschutzerklärung" />
       <section className="section">
         <div className="container-x max-w-3xl leading-7">
-          <p className="text-sm text-muted mb-6">Stand: September 2026</p>
+          <p className="text-sm text-muted mb-6">Stand: Oktober 2026</p>
 
           <H>1. Allgemeine Hinweise</H>
           <P>
@@ -74,12 +74,11 @@ export default function Datenschutz() {
             </a>
           </P>
 
-          <H>4. Hosting bei Vercel und Server-Logfiles</H>
+          <H>4. Hosting bei IONOS und Server-Logfiles</H>
           <P>
-            Diese Website wird bei der Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA („Vercel")
-            gehostet. Beim Aufruf der Website werden Ihre Anfragen über das weltweite Auslieferungsnetzwerk (CDN) von
-            Vercel verarbeitet. Dabei werden technisch notwendig folgende Daten verarbeitet und in Server-Logfiles
-            kurzzeitig gespeichert:
+            Diese Website wird bei der IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Deutschland („IONOS")
+            gehostet. Beim Aufruf der Website werden Ihre Anfragen von den Servern von IONOS verarbeitet. Dabei werden
+            technisch notwendig folgende Daten verarbeitet und in Server-Logfiles kurzzeitig gespeichert:
           </P>
           <UL
             items={[
@@ -98,13 +97,9 @@ export default function Datenschutz() {
             Datenquellen oder eine Auswertung zu Marketingzwecken durch uns findet nicht statt.
           </P>
           <P>
-            Mit Vercel besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO. Da Vercel seinen Sitz in den USA
-            hat, kann es zu einer Übermittlung von Daten in die USA kommen. Vercel ist nach dem EU-US Data Privacy
-            Framework zertifiziert, für das die Europäische Kommission ein angemessenes Datenschutzniveau festgestellt
-            hat (Art. 45 DSGVO). Ergänzend werden Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c
-            DSGVO) eingesetzt. Weitere Informationen:{" "}
-            <a className={link} href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
-              vercel.com/legal/privacy-policy
+            Mit IONOS besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO. Weitere Informationen:{" "}
+            <a className={link} href="https://www.ionos.de/terms-gtc/datenschutzerklaerung/" target="_blank" rel="noopener noreferrer">
+              www.ionos.de/terms-gtc/datenschutzerklaerung
             </a>
             .
           </P>
